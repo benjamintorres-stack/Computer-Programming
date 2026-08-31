@@ -1,2 +1,4 @@
-my_life = "my life"
-print(my_life.upper(),my_life.lower())
+name = " Benjamin Torres "
+name_clean = name.strip().upper()
+print(name)
+print(name_clean)
