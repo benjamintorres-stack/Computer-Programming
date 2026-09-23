@@ -4,10 +4,10 @@
 playlist = ["Family Ties","Power","Homecoming","Flashing Lights"]
 new_song = input("please input a new song")
 new_song = new_song.strip().title()
-
+playlist.append(new_song)
 #2. Modifying the list
 print("Number of songs:", len(playlist))
-print("Number of songs:", len(playlist))
+playlist.insert(0, "Viva La Vida")
 playlist.remove("Flashing Lights")
 del playlist[2]
 print("Alphabetical order:", sorted(playlist))
