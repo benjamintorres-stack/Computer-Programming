@@ -1,2 +1,2 @@
-numbers = list(range(0,251,7))
-print(numbers)
+fish = ("bass","grouper","salmon","yellowtail","tuna","trout")
+print(fish[1:4])
