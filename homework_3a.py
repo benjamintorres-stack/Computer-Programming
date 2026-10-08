@@ -1,6 +1,6 @@
 #Torres, Benjamin
 #Computer Programming P4
-#Assignment 2b
+#Assignment 3A
 #9 / 25 / 2026
 
 alien_color = "green"
@@ -71,16 +71,19 @@ for user in users:
         print("The list is empty")
     else:
         print (f"Hello {user} thank you for logging in again.")
+
 current_users = ["john", "maria", "ben", "alex", "james"]
 new_users = ["JOHN", "sarah", "mike", "Ben", "luis"]
-current_users_lower = []
-for user in current_users:
-    current_users_lower.append(user.lower())
 for user in new_users:
-    if user.lower() in current_users_lower:
-        print(f"{user} will need to enter a new username.")
+    in_use = False
+    for x in current_users:
+        if user.lower() == x.lower() and in_use == False:
+            in_use = True
+    if in_use == True:
+        print("That name is in use")
     else:
-        print(f"{user} is available.")
+        print("That name is available")
+
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 for number in numbers:
     if number == 1:
