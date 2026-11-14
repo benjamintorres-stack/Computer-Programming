@@ -25,3 +25,15 @@ del(activity[-1])
 print(activity)
 y = activity.pop()
 print(f"the last word in my list was {y}")
+#Benjamin Torres
+#Computer Programming p4
+#Homework 6
+#11 / 11 / 2026
+
+group_size =  int(input("How many people are in your group"))
+if group_size >= 8:
+    print("Sorry, you must wait for a table")
+elif group_size < 8:
+    ("Your table is ready")
+elif group_size =< 0:
+    ("Please input a real number")
